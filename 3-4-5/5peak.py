@@ -23,6 +23,7 @@ for i in data:
 	xpos = 0
 	for j in i:
 		if j[0] == " ":
+			#start,end,gray
 			draw.line([(xpos,line),(xpos+j[1],line)],255)
 		xpos += j[1]
 	line += 1
